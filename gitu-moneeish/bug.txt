@@ -1,0 +1,38 @@
+Bug Title: Task Deletion Error
+
+Bug Description:
+When attempting to delete a task from the TaskMaster application, users encounter an error message indicating that the task cannot be deleted, even though they have the necessary permissions. This issue occurs inconsistently, with some tasks being successfully deleted while others trigger the error message.
+
+Steps to Reproduce:
+
+Log in to the TaskMaster application.
+Navigate to a project containing multiple tasks.
+Attempt to delete a specific task by clicking on the delete button/icon.
+Observe the error message "Unable to delete task. Please try again later."
+Expected Behavior:
+The selected task should be successfully deleted from the project, and the user should receive a confirmation message indicating that the task has been removed.
+
+Actual Behavior:
+Users encounter an error message stating that the task cannot be deleted, despite having the appropriate permissions. This behavior is inconsistent, as some tasks can be deleted without any issues.
+
+Impact:
+
+Frustration and confusion among users who are unable to delete tasks as expected, leading to a decrease in user satisfaction.
+Reduced productivity as users may spend additional time attempting to delete tasks or finding workarounds for the issue.
+Potential data inconsistency if users resort to alternative methods to remove tasks, such as manual deletion from the database.
+Additional Information:
+
+This issue seems to occur more frequently when attempting to delete tasks that have recent updates or comments associated with them.
+The error message does not provide any specific details or error codes, making it challenging for users to troubleshoot the issue on their own.
+Proposed Solution:
+
+Conduct thorough testing to identify the root cause of the issue, including any potential triggers or patterns.
+Implement proper error handling and logging mechanisms to capture detailed information about failed task deletion attempts.
+Review the task deletion functionality code to ensure that all necessary checks and permissions are properly implemented.
+Roll out a software update or patch to address the bug and provide users with a seamless task deletion experience.
+Monitor user feedback and system logs post-implementation to confirm that the bug has been resolved satisfactorily.
+
+
+
+
+
